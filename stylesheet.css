@@ -79,7 +79,8 @@ ul#ulnavbar>li:hover{background-color: #ddd;
     .what {width:50%;
         text-align: center;
       margin-top: 10px;
-      margin-left:375px;
+      margin-left:25%;
+     margin-right:25%;
       font-family: Arial, sans-serif;
     }
     
