@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sweet Delights Bakery</title>
+  <!--BootstrapCSS-->
+  <Link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="RD stylesheet.css"/>
+</head>
+<body>
+  <header>
+      <div class="logo">
+        <img id=logo src="Logo.jpg" > Royal Delights 
+      </div>
+
+    </header>
+    <nav id="navbar">
+      <ul id="ulnavbar">
+        <li><a href="RD.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Order.html">Custom Orders</a></li>
+        <li><a href="Gallery.html">Menu</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  
+
+  <section id="info">
+    <h1>Freshly Baked Happiness</h1>
+    <p>Decadent cakes, pastries made with love daily.</p>
+    <p>Indulge in our delightful treats and experience the joy of freshly baked goods.</p>
+
+     </section>
+     <figure id="slideshow">
+      <!-- Slideshow Box -->
+  <div class="slideshow-box">
+    <img id="slideshowImage" src="rd1.jpg" alt="Slideshow" />
+    <div class="slideshow-controls">
+      <button class="btn btn-outline-primary" onclick="changeSlide(-1)">&#10094; Prev</button>
+      <button class="btn btn-outline-primary" onclick="changeSlide(1)">Next &#10095;</button>
+    </div>
+  </div>
+
+
+</div>
+
+<script>
+  const imageSources = [
+    "rd1.jpg",
+    "rd2.jpg",
+    "rd3.jpg",
+    "rd4.jpg",
+    "rd5.jpg",
+    "rd6.jpg",
+    "rd7.jpg",
+    "rd8.jpg",
+    "rd9.jpg",
+    "rd10.jpg",
+
+  ];
+
+  let currentIndex = 0;
+
+  function changeSlide(direction) {
+    currentIndex = (currentIndex + direction + imageSources.length) % imageSources.length;
+    document.getElementById("slideshowImage").src = imageSources[currentIndex];
+  }
+
+  // Optional: automatic slideshow every 5 seconds
+  setInterval(() => changeSlide(1), 5000);
+</script>
+      </figure>
+
+  
+     <div class="Orderform">
+        <a href ="Order.html" target="_self"></a>
+        </div>
+
+
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Sweet Delights Bakery. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <--BootstrapCSS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+</body>
+</html>

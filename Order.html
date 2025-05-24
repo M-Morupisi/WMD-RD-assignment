@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sweet Delights Bakery</title>
+  <!--BootstrapCSS-->
+  <Link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="RD stylesheet.css"/>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img id=logo src="Logo.jpg" > Royal Delights 
+      </div>
+
+    </header>
+      <nav id="navbar">
+      <ul id="ulnavbar">
+        <li><a href="RD.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Order.html">Custom Orders</a></li>
+        <li><a href="Gallery.html">Menu</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  
+
+<div class="Orderform">
+    
+
+</div>
+
+<div id="cakeFormContainer" class="hidden">
+    <h1>Custom Cake Order Form</h1>
+    <div class="form-container">
+        <form id="cakeOrderForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Your Name*</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="date">Delivery/Pickup Date*</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Approximate Time*</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="size">Cake Size*</label>
+                <select id="size" name="size" required>
+                    <option value="">Select size</option>
+                    <option value="6-inch">6" Round (8-10 servings)</option>
+                    <option value="8-inch">8" Round (12-16 servings)</option>
+                    <option value="10-inch">10" Round (20-25 servings)</option>
+                    <option value="12-inch">12" Round (30-35 servings)</option>
+                    <option value="sheet">Sheet Cake (48 servings)</option>
+                    <option value="custom">Custom Size/Shape</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="flavor">Cake Flavor*</label>
+                <select id="flavor" name="flavor" required>
+                    <option value="">Select flavor</option>
+                    <option value="vanilla">Vanilla</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="red-velvet">Red Velvet</option>
+                    <option value="strawberry">Strawberry</option>
+                    <option value="lemon">Lemon</option>
+                    <option value="marble">Marble (Vanilla & Chocolate)</option>
+                    <option value="custom">Custom Flavor</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="filling">Filling Preference</label>
+                <select id="filling" name="filling">
+                    <option value="none">None</option>
+                    <option value="buttercream">Buttercream</option>
+                    <option value="chocolate-ganache">Chocolate Ganache</option>
+                    <option value="fruit">Fruit Preserves</option>
+                    <option value="cream-cheese">Cream Cheese</option>
+                    <option value="custom">Custom Filling</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="frosting">Frosting Type*</label>
+                <select id="frosting" name="frosting" required>
+                    <option value="">Select frosting</option>
+                    <option value="buttercream">Buttercream</option>
+                    <option value="fondant">Fondant</option>
+                    <option value="cream-cheese">Cream Cheese</option>
+                    <option value="whipped">Whipped Cream</option>
+                    <option value="ganache">Chocolate Ganache</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="colors">Color Scheme/Design Ideas</label>
+                <input type="text" id="colors" name="colors" placeholder="e.g., Pink and gold with floral design">
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Special Instructions/Design Details*</label>
+                <textarea id="message" name="message" required placeholder="Please describe your cake design, theme, any decorations, or special requests"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="allergies">Allergies or Dietary Restrictions</label>
+                <input type="text" id="allergies" name="allergies" placeholder="e.g., Nut-free, gluten-free, etc.">
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit Cake Order Request</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Sweet Delights Bakery. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
